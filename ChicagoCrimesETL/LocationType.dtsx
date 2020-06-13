@@ -1,0 +1,1438 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/12/2020 8:08:03 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-LRGN2OF"
+  DTS:CreatorName="DESKTOP-LRGN2OF\lacri"
+  DTS:DTSID="{94036218-F335-4FB3-97A9-F17949F1F7C5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{01B7D6A8-7C1B-4ADB-81D7-938CE83AC5D6}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D83541DC-A728-4CD9-8D32-9056E9DA97D2}"
+      DTS:ObjectName="DESKTOP-LRGN2OF\SQLEXPRESS.Crimes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-LRGN2OF\SQLEXPRESS;Initial Catalog=Crimes;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{294ADBF1-F0B8-47DB-B625-54FA9F0CE543}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\lacri\Desktop\ChicagoCrimesETL\Data\Crimes_-_2001_to_present.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ID"
+              DTS:DTSID="{20B1EC7E-F680-48B7-AAC3-F8A7D56AF302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Case Number"
+              DTS:DTSID="{434DFBCB-36E4-46A1-AE40-FE6B6D10E147}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Date"
+              DTS:DTSID="{99422D40-652B-4D02-99B7-B714ED40688E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Block"
+              DTS:DTSID="{D9494136-A4CF-4C3F-88DB-324F692B3F97}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IUCR"
+              DTS:DTSID="{88B9D385-D970-43CB-8B5C-FEDA90C17D15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Primary Type"
+              DTS:DTSID="{2620BCEA-984C-4E8F-A8F3-E67C6D104485}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Description"
+              DTS:DTSID="{0F5F871F-1DF0-4ADE-A590-4B4539F1D496}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location Description"
+              DTS:DTSID="{78E65052-0EB5-468D-B359-C30F2EF137DE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Arrest"
+              DTS:DTSID="{061ADC49-C14B-40B5-97C2-1AF2C183E44F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Domestic"
+              DTS:DTSID="{D2495AAD-B010-4676-9BAF-DB38B6DC02EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Beat"
+              DTS:DTSID="{3B084B54-CC85-4D4A-A5F0-D2512BDB38CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="District"
+              DTS:DTSID="{45D9DAE2-DAB0-4D93-9BC9-6EC83AC94623}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Ward"
+              DTS:DTSID="{236F86EA-252C-4D7F-ACF5-AB7D75F5A5BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Community Area"
+              DTS:DTSID="{D60175F9-672A-43F1-81D9-DE676364B1E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FBI Code"
+              DTS:DTSID="{2A2719C5-6EFF-4222-A391-BAFF08302E66}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="X Coordinate"
+              DTS:DTSID="{4E8FC24E-A7F1-4E87-9299-F0C501491E34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y Coordinate"
+              DTS:DTSID="{73C633DE-6B14-49E6-A78C-48BB133609EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Year"
+              DTS:DTSID="{719111BC-FFB1-4313-8CDC-6EA15EE60B16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Updated On"
+              DTS:DTSID="{C8726CF9-FFBE-421A-8449-4C035FECBE52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Latitude"
+              DTS:DTSID="{D791BBB8-0DDE-406F-9B69-E4036ABD3F53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Longitude"
+              DTS:DTSID="{8554F6A4-3598-4EBE-8699-D642F995116B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Location"
+              DTS:DTSID="{C46237A0-34E6-4603-9D9D-0CBE64C8B984}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Clear LocationType"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B5EB1247-F636-4524-A17D-F7C06947E9BB}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Clear LocationType"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D83541DC-A728-4CD9-8D32-9056E9DA97D2}"
+          SQLTask:SqlStatementSource="truncate table Location_Type;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Ładowanie tabeli LocationType"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{59454374-0A2C-4F46-8070-3BEE6974DDDB}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Ładowanie tabeli LocationType"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Allow only non-empty values"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Inputs[Conditional Split Input].Columns[Copy of Location Description]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Location Description"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[EmptyLocationType]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="EmptyLocationType"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]}) &amp;&amp; [TRIM](#{Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]}) == ""</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL([Copy of Location Description]) &amp;&amp; TRIM([Copy of Location Description]) == ""</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[NonEmptyLocationType]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="NonEmptyLocationType"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode"
+              componentClassID="Microsoft.DataConvert"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Data Conversion"
+              name="Convert non-unicode to unicode"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Inputs[Data Conversion Input].Columns[Location Description]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Location Description"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Location Description]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output]"
+                  exclusionGroup="1"
+                  name="Data Conversion Output"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]"
+                      name="Copy of Location Description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          name="SourceInputColumnLineageID">#{Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Location Description]}</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Data Conversion Error Output"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="CrimesCSV data source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].Columns[Location Description]"
+                      codePage="65001"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
+                      length="50"
+                      lineageId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].Columns[Location Description]"
+                      name="Location Description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="ID" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Case Number" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Block]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Block" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="IUCR" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Primary Type" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Location Description" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Arrest" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Domestic" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Beat]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Beat" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[District]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="District" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Ward]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Ward" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Community Area" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="FBI Code" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="X Coordinate" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Y Coordinate" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Updated On" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Location" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Derived Column.Inputs[Derived Column Input].Columns[Copy of Location Description]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Location Description"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Brak"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Brak"</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\LocationType table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="LocationType table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Location_Type]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Ładowanie tabeli LocationType\LocationType table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input].Columns[Copy of Location Description]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Location Description"
+                      externalMetadataColumnId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      lineageId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Copy of Location Description]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input].ExternalColumns[LocationTypeId]"
+                      dataType="i4"
+                      name="LocationTypeId" />
+                    <externalMetadataColumn
+                      refId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input].ExternalColumns[Type]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\LocationType table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\LocationType table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\LocationType table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\LocationType table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ładowanie tabeli LocationType\LocationType table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sortowanie i usuwanie duplikatow"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[Location Description]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Location Description"
+                      lineageId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].Columns[Location Description]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Location Description]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Location Description]"
+                      name="Location Description"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output].Columns[Location Description]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ładowanie tabeli LocationType\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 1].Columns[Location Description]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Location Description"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Location Description]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Location Description]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 1].Columns[Copy of Location Description]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Location Description"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Copy of Location Description]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 2].Columns[Location Description]"
+                      cachedCodepage="65001"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Location Description"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Location Description]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Location Description]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 2].Columns[Copy of Location Description]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Copy of Location Description"
+                      lineageId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output].Columns[Copy of Location Description]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Copy of Location Description]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Location Description]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Location Description]"
+                      name="Location Description" />
+                    <outputColumn
+                      refId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Copy of Location Description]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1].Columns[Copy of Location Description]"
+                      name="Copy of Location Description" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[Data Conversion Output]"
+              endId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Inputs[Conditional Split Input]"
+              name="Data Conversion Output"
+              startId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Outputs[Data Conversion Output]" />
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[Derived Column Output]"
+              endId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 2]"
+              name="Derived Column Output"
+              startId="Package\Ładowanie tabeli LocationType\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[EmptyLocationType]"
+              endId="Package\Ładowanie tabeli LocationType\Derived Column.Inputs[Derived Column Input]"
+              name="EmptyLocationType"
+              startId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[EmptyLocationType]" />
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[Flat File Source Output]"
+              endId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Ładowanie tabeli LocationType\CrimesCSV data source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[NonEmptyLocationType]"
+              endId="Package\Ładowanie tabeli LocationType\Union All.Inputs[Union All Input 1]"
+              name="NonEmptyLocationType"
+              startId="Package\Ładowanie tabeli LocationType\Allow only non-empty values.Outputs[NonEmptyLocationType]" />
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[Sort Output]"
+              endId="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode.Inputs[Data Conversion Input]"
+              name="Sort Output"
+              startId="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow.Outputs[Sort Output]" />
+            <path
+              refId="Package\Ładowanie tabeli LocationType.Paths[Union All Output 1]"
+              endId="Package\Ładowanie tabeli LocationType\LocationType table.Inputs[OLE DB Destination Input]"
+              name="Union All Output 1"
+              startId="Package\Ładowanie tabeli LocationType\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{7D68F7AA-EECA-4D50-97F2-C13D0E72C0DA}"
+      DTS:From="Package\Clear LocationType"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Ładowanie tabeli LocationType" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,41.6"
+          Id="Package\Clear LocationType"
+          TopLeft="44.0000007493156,42.8235300123486" />
+        <NodeLayout
+          Size="223.2,41.6"
+          Id="Package\Ładowanie tabeli LocationType"
+          TopLeft="133.714287991426,126.023531179197" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="128.000000749316,84.4235300123486">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="117.314287242111,41.6000011668486"
+              Start="0,0"
+              End="117.314287242111,34.1000011668486">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.8000005834243" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.8000005834243"
+                    Point2="0,20.8000005834243"
+                    Point3="4,20.8000005834243" />
+                  <mssgle:LineSegment
+                    End="113.314287242111,20.8000005834243" />
+                  <mssgle:CubicBezierSegment
+                    Point1="113.314287242111,20.8000005834243"
+                    Point2="117.314287242111,20.8000005834243"
+                    Point3="117.314287242111,24.8000005834243" />
+                  <mssgle:LineSegment
+                    End="117.314287242111,34.1000011668486" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Ładowanie tabeli LocationType">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Ładowanie tabeli LocationType\LocationType table"
+          TopLeft="200.00000340598,479.43530070691" />
+        <NodeLayout
+          Size="228.8,41.6"
+          Id="Package\Ładowanie tabeli LocationType\Convert non-unicode to unicode"
+          TopLeft="162.857145630584,169.50588388872" />
+        <NodeLayout
+          Size="120,41.6"
+          Id="Package\Ładowanie tabeli LocationType\Union All"
+          TopLeft="198.2857176625,390.776472175493" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Ładowanie tabeli LocationType\Derived Column"
+          TopLeft="440.000007493156,287.670590037046" />
+        <NodeLayout
+          Size="187.2,41.6"
+          Id="Package\Ładowanie tabeli LocationType\CrimesCSV data source"
+          TopLeft="49.142857979755,18.9647061483258" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\Ładowanie tabeli LocationType\Sortowanie i usuwanie duplikatow"
+          TopLeft="99.42857312183,97.2705895994774" />
+        <NodeLayout
+          Size="213.6,41.6"
+          Id="Package\Ładowanie tabeli LocationType\Allow only non-empty values"
+          TopLeft="178.285717321902,245.835295310235" />
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[Union All Output 1]"
+          TopLeft="258.2857176625,432.376472175493">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="25.3142857434798,47.0588285314172"
+              Start="0,0"
+              End="25.3142857434798,39.5588285314172">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.5294142657086" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.5294142657086"
+                    Point2="0,23.5294142657086"
+                    Point3="4,23.5294142657086" />
+                  <mssgle:LineSegment
+                    End="21.3142857434798,23.5294142657086" />
+                  <mssgle:CubicBezierSegment
+                    Point1="21.3142857434798,23.5294142657086"
+                    Point2="25.3142857434798,23.5294142657086"
+                    Point3="25.3142857434798,27.5294142657086" />
+                  <mssgle:LineSegment
+                    End="25.3142857434798,39.5588285314172" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[Sort Output]"
+          TopLeft="218.62857312183,138.870589599477">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.6285725087536,30.6352942892424"
+              Start="0,0"
+              End="58.6285725087536,23.1352942892424">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.3176471446212" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.3176471446212"
+                    Point2="0,15.3176471446212"
+                    Point3="4,15.3176471446212" />
+                  <mssgle:LineSegment
+                    End="54.6285725087536,15.3176471446212" />
+                  <mssgle:CubicBezierSegment
+                    Point1="54.6285725087536,15.3176471446212"
+                    Point2="58.6285725087536,15.3176471446212"
+                    Point3="58.6285725087536,19.3176471446212" />
+                  <mssgle:LineSegment
+                    End="58.6285725087536,23.1352942892424" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[NonEmptyLocationType]"
+          TopLeft="285.085717321902,287.435295310235">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-45.4666663260688,103.341176865258"
+              Start="0,0"
+              End="-45.4666663260688,95.8411768652576">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.1888547228499" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,57.1888547228499"
+                    Point2="0,61.1888547228499"
+                    Point3="-4,61.1888547228499" />
+                  <mssgle:LineSegment
+                    End="-41.4666663260688,61.1888547228499" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-41.4666663260688,61.1888547228499"
+                    Point2="-45.4666663260688,61.1888547228499"
+                    Point3="-45.4666663260688,65.1888547228499" />
+                  <mssgle:LineSegment
+                    End="-45.4666663260688,95.8411768652576" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-75.2646808192844,66.1888547228499,105.0626953125,11.3310546875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[Flat File Source Output]"
+          TopLeft="142.742857979755,60.5647061483258">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75.885715142075,36.7058834511516"
+              Start="0,0"
+              End="75.885715142075,29.2058834511516">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.3529417255758" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.3529417255758"
+                    Point2="0,18.3529417255758"
+                    Point3="4,18.3529417255758" />
+                  <mssgle:LineSegment
+                    End="71.885715142075,18.3529417255758" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71.885715142075,18.3529417255758"
+                    Point2="75.885715142075,18.3529417255758"
+                    Point3="75.885715142075,22.3529417255758" />
+                  <mssgle:LineSegment
+                    End="75.885715142075,29.2058834511516" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[EmptyLocationType]"
+          TopLeft="391.885717321902,266.635295310235">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.1142901712536,41.8352947268106"
+              Start="0,0"
+              End="40.6142901712536,41.8352947268106">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="20.0571450856268,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20.0571450856268,0"
+                    Point2="24.0571450856268,0"
+                    Point3="24.0571450856268,4" />
+                  <mssgle:LineSegment
+                    End="24.0571450856268,37.8352947268106" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.0571450856268,37.8352947268106"
+                    Point2="24.0571450856268,41.8352947268106"
+                    Point3="28.0571450856268,41.8352947268106" />
+                  <mssgle:LineSegment
+                    End="40.6142901712536,41.8352947268106" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.6342025706232,-17.3310546875,87.3826953125,11.3310546875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[Derived Column Output]"
+          TopLeft="516.400007493156,329.270590037046">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-239.447623163989,61.505882138447"
+              Start="0,0"
+              End="-239.447623163989,54.005882138447">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.4179565293436" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,32.4179565293436"
+                    Point2="0,36.4179565293436"
+                    Point3="-4,36.4179565293436" />
+                  <mssgle:LineSegment
+                    End="-235.447623163989,36.4179565293436" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-235.447623163989,36.4179565293436"
+                    Point2="-239.447623163989,36.4179565293436"
+                    Point3="-239.447623163989,40.4179565293436" />
+                  <mssgle:LineSegment
+                    End="-239.447623163989,54.005882138447" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ładowanie tabeli LocationType.Paths[Data Conversion Output]"
+          TopLeft="281.171431476243,211.10588388872">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,34.7294114215152"
+              Start="0,0"
+              End="0,27.2294114215152">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.2294114215152" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Ładowanie tabeli LocationType\LocationType table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
