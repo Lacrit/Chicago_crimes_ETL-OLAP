@@ -11,11 +11,21 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="12"
-  DTS:VersionGUID="{7696491E-8EA5-415D-AAA1-AF9C8D794CDD}">
+  DTS:VersionBuild="35"
+  DTS:VersionGUID="{B0799EAE-F452-4C25-9A25-3D5A216F2E89}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s15486]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{61E35DB9-34F6-45B6-AF4F-DAECF8F5DCE2}"
+      DTS:ObjectName="db-mssql.s15486">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s15486;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
       DTS:CreationName="OLEDB"
@@ -40,7 +50,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\lacri\Desktop\ChicagoCrimesETL\Data\Crimes_-_2001_to_present.csv">
+          DTS:ConnectionString="C:\Users\lacri\Desktop\IDH\Chicago_crimes_ETL-OLAP\ChicagoCrimesETL\Data\Crimes_-_2001_to_present.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{1B8985DA-E4CE-4867-B44E-F33E9347B3B5}"
+              DTS:DTSID="{828BE885-540A-4F82-B360-5D91C4022D3E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Case Number"
-              DTS:DTSID="{FE90FB93-B7E7-4E23-B04D-99E9EDFB7BE6}"
+              DTS:DTSID="{F6EE2EC5-DB8A-45F9-ADBD-CF06847650C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +76,7 @@
               DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Date"
-              DTS:DTSID="{155487F4-1EA1-42D6-B08F-731B9A6FA391}"
+              DTS:DTSID="{EEF90ECE-D49B-494B-9444-7B826060855D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +85,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Block"
-              DTS:DTSID="{3A026306-3EC5-447B-9166-E3F82D052CB2}"
+              DTS:DTSID="{A44075B0-6F2A-4D8A-B460-83B5FF4AF26D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +94,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IUCR"
-              DTS:DTSID="{583C2980-759C-4E2A-A3F2-463F20826A3D}"
+              DTS:DTSID="{96F6E38A-A0FF-4DCF-A1DA-27EBDD244F28}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +103,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Primary Type"
-              DTS:DTSID="{5D247267-7AF4-4C8C-8C02-AC703F882DFD}"
+              DTS:DTSID="{0E85F311-AAEF-43DD-9FFA-C30B905ED653}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +112,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Description"
-              DTS:DTSID="{281BAB2A-8D00-4D4D-BD04-2347EA317F83}"
+              DTS:DTSID="{610283DC-2084-413D-8A17-2ACE5243990C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +121,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location Description"
-              DTS:DTSID="{3A2C8102-F65B-47DB-9335-5A26F470DAF5}"
+              DTS:DTSID="{EF767FBF-F1CF-4202-9FD6-216D18A9B1A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +130,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Arrest"
-              DTS:DTSID="{D3BB1354-7E06-4089-96D2-AFE15B5EC91A}"
+              DTS:DTSID="{72A835C2-6535-4FEE-9C1C-20AE0A77CDFA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +139,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Domestic"
-              DTS:DTSID="{66210DF2-9F07-416F-A6F5-B785A0D1BDA1}"
+              DTS:DTSID="{6FF423E0-EB51-4EFB-A729-3235DE294EA7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +148,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Beat"
-              DTS:DTSID="{C6F967DE-BDF7-4B52-B220-383A2F03B1CC}"
+              DTS:DTSID="{20A07AF3-7017-49EB-8BA6-9EE20DAD8568}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +157,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="District"
-              DTS:DTSID="{471FCB30-6FD6-4170-AA76-29333CCE1EDF}"
+              DTS:DTSID="{2D2A3CA8-6A13-4E89-A5DA-4766DB0CC154}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +166,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Ward"
-              DTS:DTSID="{D37413AC-04FA-4A90-AE3E-34CA17CE0613}"
+              DTS:DTSID="{DADC8C66-EB57-44C7-88B9-CCC698FDFF68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +175,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Community Area"
-              DTS:DTSID="{CAE72D17-29EA-4092-A83F-81C2A0882A72}"
+              DTS:DTSID="{18FDAD75-FD3E-4799-A2AD-21095A0491CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +184,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FBI Code"
-              DTS:DTSID="{9788A744-A292-46A6-8968-157223B4A1F5}"
+              DTS:DTSID="{1E73DB70-39C7-4FAD-B4B6-0A79B4ED3FDB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +193,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="X Coordinate"
-              DTS:DTSID="{21FC3824-F0F9-4F66-8A50-44164F7E72E9}"
+              DTS:DTSID="{7DED1CF1-17C7-4F7F-8D83-791E6AEF41A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +202,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Y Coordinate"
-              DTS:DTSID="{77F6A8A0-0736-42FE-BE90-380DAFEDEFE9}"
+              DTS:DTSID="{BF0CDDB3-49CB-4068-B00B-DFEA72ECE957}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -201,7 +211,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Year"
-              DTS:DTSID="{B7C50817-1BC6-49EA-9D9F-C3BF193B3511}"
+              DTS:DTSID="{ADC64164-580D-4439-95B1-D975952DA8BD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,7 +220,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Updated On"
-              DTS:DTSID="{05DED4EA-97C2-4A3A-8AF4-B11632082485}"
+              DTS:DTSID="{FC9B8938-D8C1-48A4-BA9D-D09B4A7B2854}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -219,7 +229,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Latitude"
-              DTS:DTSID="{7C79BBB6-A97E-4461-BFB9-1F4AB647D149}"
+              DTS:DTSID="{6AFCB172-D29C-4659-91A1-AAA5BAA7A566}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -228,7 +238,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Longitude"
-              DTS:DTSID="{BC4B8B54-406A-4F14-BBB9-6003A7E63B60}"
+              DTS:DTSID="{341E3494-9171-485C-8624-83D175B4E4C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,7 +247,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location"
-              DTS:DTSID="{A301ADF1-42A3-4079-BCC8-D39318A87221}"
+              DTS:DTSID="{281F332E-CF93-4C74-9AED-3D6CE89E0E6D}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -247,13 +257,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Czyszczenie tabeli Time"
+      DTS:refId="Package\Czyszczenie wymiaru Time"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{E9BF3DB8-0E8A-4A48-8040-37B86B852056}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Czyszczenie tabeli Time"
+      DTS:ObjectName="Czyszczenie wymiaru Time"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -264,13 +274,30 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Dodanie nazw polskich dni tygodni"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{79DF0607-1787-4157-86DC-282907034A55}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dodanie nazw polskich dni tygodni"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{51DFBB97-5345-4DD2-A0DE-831207275CA4}"
+          SQLTask:SqlStatementSource="update Time set&#xA;DayOfWeekPolish=&#xA;&#x9;case DayOfWeek&#xA;&#x9;when 1 then 'Poniedzialek'&#xA;&#x9;when 2 then 'Wtorek'&#xA;&#x9;when 3 then 'Sroda'&#xA;&#x9;when 4 then 'Czwartek'&#xA;&#x9;when 5 then 'Piatek'&#xA;&#x9;when 6 then 'Sobota'&#xA;&#x9;when 7 then 'Niedziela'&#xA;&#x9;else null&#xA;&#x9;end;&#xA;&#xA;update Time set&#xA;MonthNamePolish=&#xA;&#x9;case Month&#xA;&#x9;when 1 then 'Styczeń'&#xA;&#x9;when 2 then 'Luty'&#xA;&#x9;when 3 then 'Marzec'&#xA;&#x9;when 4 then 'Kwiecień'&#xA;&#x9;when 5 then 'Maj'&#xA;&#x9;when 6 then 'Czerwiec'&#xA;&#x9;when 7 then 'Lipiec'&#xA;&#x9;when 8 then 'Sierpień'&#xA;&#x9;when 9 then 'Wrzesień'&#xA;&#x9;when 10 then 'Październik'&#xA;&#x9;when 11 then 'Listopad'&#xA;&#x9;when 12 then 'Grudzień'&#xA;&#x9;else null&#xA;&#x9;end;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Ladowanie danych do wymiaru Time"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{8141FBFC-80B2-4D3F-B072-21126075EC03}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Ladowanie danych do wymiaru Time"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -278,182 +305,12 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Derived Column"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[Date]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="Date"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Year]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Year]"
-                      name="Year"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[YEAR](#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">YEAR(Date)</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Month]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Month]"
-                      name="Month"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[MONTH](#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">MONTH(Date)</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Day]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Day]"
-                      name="Day"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[DAY](#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">DAY(Date)</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Time]"
-                      dataType="dbTime2"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Time]"
-                      name="Time"
-                      scale="2"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_DBTIME2,2)#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]}</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_DBTIME2,2)Date</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Weekday]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Weekday]"
-                      name="Weekday"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[DATEPART]("dw",#{Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">DATEPART("dw",Date)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="2057"
-              name="Flat File Source"
+              name="Pobieranie danych z pliku Crime dataset"
               usesDispositions="true"
               version="1">
               <properties>
@@ -468,23 +325,23 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Date]"
                       dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Date]"
                       name="Date"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -502,131 +359,131 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[ID]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="ID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Case Number" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Date]"
                       dataType="dbTimeStamp"
                       name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Block]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Block]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Block" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="IUCR" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Primary Type" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Description]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Description" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Location Description" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Arrest" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Domestic" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Beat]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Beat]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Beat" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[District]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[District]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="District" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ward]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Ward]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Ward" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Community Area" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="FBI Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="X Coordinate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Y Coordinate" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Year]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Updated On" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Latitude" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Longitude" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Location]"
                       codePage="65001"
                       dataType="str"
                       length="50"
@@ -634,27 +491,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="65001"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -663,11 +520,250 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Podzial czasu na skladowe"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Inputs[Derived Column Input].Columns[Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Date"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[YEAR](#{Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">YEAR(Date)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Month]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Month]"
+                      name="Month"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[MONTH](#{Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">MONTH(Date)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Day]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Day]"
+                      name="Day"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DAY](#{Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DAY(Date)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Time]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Time]"
+                      name="Time"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIME2,2)#{Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIME2,2)Date</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Weekday]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Weekday]"
+                      name="Weekday"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[DATEPART]("dw",#{Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">DATEPART("dw",Date)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sortowanie i usuwanie duplikatow"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Date"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Date]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]"
+                      name="Date"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Date]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              localeId="1033"
+              name="Wypelnianie wymiaru Time danymi"
               usesDispositions="true"
               version="4">
               <properties>
@@ -720,7 +816,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
                   description="The OLE DB runtime connection used to access the database."
@@ -728,177 +824,115 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Date]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="Date"
-                      cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]" />
-                    <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].Columns[Year]"
                       cachedDataType="i4"
                       cachedName="Year"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Year]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Year]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Time]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].Columns[Time]"
                       cachedDataType="dbTime2"
                       cachedName="Time"
                       cachedScale="2"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Time]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Time]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Time]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Time]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Day]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].Columns[Day]"
                       cachedDataType="i4"
                       cachedName="Day"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Day]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Day]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Day]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Day]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Month]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].Columns[Month]"
                       cachedDataType="i4"
                       cachedName="Month"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Month]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Month]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Weekday]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].Columns[Weekday]"
                       cachedDataType="i4"
                       cachedName="Weekday"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
-                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[Weekday]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output].Columns[Weekday]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].Columns[Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Date"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Date]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TimeId]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[TimeId]"
                       dataType="i4"
                       name="TimeId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Time]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Time]"
                       dataType="dbTime2"
                       name="Time"
                       scale="7" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
                       dataType="i4"
                       name="Year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Day]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Day]"
                       dataType="i4"
                       name="Day" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Month]"
                       dataType="i4"
                       name="Month" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeek]"
                       dataType="i4"
                       name="DayOfWeek" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
                       dataType="dbTimeStamp"
                       name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeekPolish]"
-                      dataType="i4"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[DayOfWeekPolish]"
+                      dataType="wstr"
+                      length="50"
                       name="DayOfWeekPolish" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input].ExternalColumns[MonthNamePolish]"
+                      dataType="wstr"
+                      length="50"
+                      name="MonthNamePolish" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Sort"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">true</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Date]"
-                      cachedDataType="dbTimeStamp"
-                      cachedName="Date"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]"
-                      dataType="dbTimeStamp"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Date]"
-                      name="Date"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Date]}</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -907,20 +941,20 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Ladowanie danych do wymiaru Time.Paths[Derived Column Output]"
+              endId="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+              startId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              refId="Package\Ladowanie danych do wymiaru Time.Paths[Flat File Source Output]"
+              endId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Inputs[Sort Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset.Outputs[Flat File Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Sort Output]"
-              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              refId="Package\Ladowanie danych do wymiaru Time.Paths[Sort Output]"
+              endId="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe.Inputs[Derived Column Input]"
               name="Sort Output"
-              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+              startId="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -931,10 +965,18 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{5EF0221F-CA0A-4C5F-9259-16ED8BC6B946}"
-      DTS:From="Package\Czyszczenie tabeli Time"
+      DTS:From="Package\Czyszczenie wymiaru Time"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Ladowanie danych do wymiaru Time" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{A0348065-523C-416E-A181-A3BBC0F905BD}"
+      DTS:From="Package\Ladowanie danych do wymiaru Time"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Dodanie nazw polskich dni tygodni" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -947,41 +989,79 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="188.8,41.6"
-          Id="Package\Czyszczenie tabeli Time"
+          Size="203.2,41.6"
+          Id="Package\Czyszczenie wymiaru Time"
           TopLeft="58.2857152783141,39.7647064400379" />
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
+          Size="240.8,41.6"
+          Id="Package\Dodanie nazw polskich dni tygodni"
+          TopLeft="142.285716708826,200.047061629114" />
+        <NodeLayout
+          Size="250.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Time"
           TopLeft="106.857144676909,123.576472321349" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="152.685715278314,81.3647064400379">
+          TopLeft="159.885715278314,81.3647064400379">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="29.3714293985951,42.2117658813107"
+              EndConnector="72.1714293985949,42.2117658813111"
               Start="0,0"
-              End="29.3714293985951,34.7117658813107">
+              End="72.1714293985949,34.7117658813111">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.1058829406554" />
+                    End="0,17.1058829406556" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.1058829406554"
-                    Point2="0,21.1058829406554"
-                    Point3="4,21.1058829406554" />
+                    Point1="0,17.1058829406556"
+                    Point2="0,21.1058829406556"
+                    Point3="4,21.1058829406556" />
                   <mssgle:LineSegment
-                    End="25.3714293985951,21.1058829406554" />
+                    End="68.1714293985949,21.1058829406556" />
                   <mssgle:CubicBezierSegment
-                    Point1="25.3714293985951,21.1058829406554"
-                    Point2="29.3714293985951,21.1058829406554"
-                    Point3="29.3714293985951,25.1058829406554" />
+                    Point1="68.1714293985949,21.1058829406556"
+                    Point2="72.1714293985949,21.1058829406556"
+                    Point3="72.1714293985949,25.1058829406556" />
                   <mssgle:LineSegment
-                    End="29.3714293985951,34.7117658813107" />
+                    End="72.1714293985949,34.7117658813111" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="232.057144676909,165.176472321349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="30.6285720319166,34.8705893077649"
+              Start="0,0"
+              End="30.6285720319166,27.3705893077649">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.4352946538825" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.4352946538825"
+                    Point2="0,17.4352946538825"
+                    Point3="4,17.4352946538825" />
+                  <mssgle:LineSegment
+                    End="26.6285720319166,17.4352946538825" />
+                  <mssgle:CubicBezierSegment
+                    Point1="26.6285720319166,17.4352946538825"
+                    Point2="30.6285720319166,17.4352946538825"
+                    Point3="30.6285720319166,21.4352946538825" />
+                  <mssgle:LineSegment
+                    End="30.6285720319166,27.3705893077649" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -994,31 +1074,35 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Ladowanie danych do wymiaru Time">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
+          Size="238.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Time\Sortowanie i usuwanie duplikatow"
+          TopLeft="158.857145562464,101.458824593303" />
+        <NodeLayout
+          Size="242.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi"
+          TopLeft="136.000002316066,278.964709794728" />
+        <NodeLayout
+          Size="266.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Time\Pobieranie danych z pliku Crime dataset"
           TopLeft="61.1428581841138,25.6941180074091" />
         <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="83.4285728493516,260.000003646402" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="158.857145562464,101.458824593303" />
+          Size="202.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Time\Podzial czasu na skladowe"
+          TopLeft="140.571430965346,203.341178469675" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="136.342858184114,67.2941180074091">
+          Id="Package\Ladowanie danych do wymiaru Time.Paths[Flat File Source Output]"
+          TopLeft="194.342858184114,67.2941180074091">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="71.3142873783501,34.164706585894"
+              EndConnector="83.7142873783502,34.1647065858939"
               Start="0,0"
-              End="71.3142873783501,26.664706585894">
+              End="83.7142873783502,26.6647065858939">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1029,39 +1113,13 @@
                     Point2="0,17.082353292947"
                     Point3="4,17.082353292947" />
                   <mssgle:LineSegment
-                    End="67.3142873783501,17.082353292947" />
+                    End="79.7142873783502,17.082353292947" />
                   <mssgle:CubicBezierSegment
-                    Point1="67.3142873783501,17.082353292947"
-                    Point2="71.3142873783501,17.082353292947"
-                    Point3="71.3142873783501,21.082353292947" />
+                    Point1="79.7142873783502,17.082353292947"
+                    Point2="83.7142873783502,17.082353292947"
+                    Point3="83.7142873783502,21.082353292947" />
                   <mssgle:LineSegment
-                    End="71.3142873783501,26.664706585894" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Data Flow Task\Derived Column"
-          TopLeft="137.142859478386,167.247060316409" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="210.600002520425,143.058824593303">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,24.1882357231061"
-              Start="0,0"
-              End="0,16.6882357231061">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.6882357231061" />
+                    End="83.7142873783502,26.6647065858939" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1071,31 +1129,65 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="213.542859478386,208.847060316409">
+          Id="Package\Ladowanie danych do wymiaru Time.Paths[Sort Output]"
+          TopLeft="278.057145562464,143.058824593303">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-44.9142866290346,51.1529433299926"
+              EndConnector="-36.2857145971178,60.2823538763717"
               Start="0,0"
-              End="-44.9142866290346,43.6529433299926">
+              End="-36.2857145971178,52.7823538763717">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.5764716649963" />
+                    End="0,26.1411769381858" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.5764716649963"
-                    Point2="0,25.5764716649963"
-                    Point3="-4,25.5764716649963" />
+                    Point1="0,26.1411769381858"
+                    Point2="0,30.1411769381858"
+                    Point3="-4,30.1411769381858" />
                   <mssgle:LineSegment
-                    End="-40.9142866290346,25.5764716649963" />
+                    End="-32.2857145971178,30.1411769381858" />
                   <mssgle:CubicBezierSegment
-                    Point1="-40.9142866290346,25.5764716649963"
-                    Point2="-44.9142866290346,25.5764716649963"
-                    Point3="-44.9142866290346,29.5764716649963" />
+                    Point1="-32.2857145971178,30.1411769381858"
+                    Point2="-36.2857145971178,30.1411769381858"
+                    Point3="-36.2857145971178,34.1411769381858" />
                   <mssgle:LineSegment
-                    End="-44.9142866290346,43.6529433299926" />
+                    End="-36.2857145971178,52.7823538763717" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ladowanie danych do wymiaru Time.Paths[Derived Column Output]"
+          TopLeft="241.771430965346,244.941178469675">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.4285713507198,34.0235313250536"
+              Start="0,0"
+              End="15.4285713507198,26.5235313250536">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.0117656625268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.0117656625268"
+                    Point2="0,17.0117656625268"
+                    Point3="4,17.0117656625268" />
+                  <mssgle:LineSegment
+                    End="11.4285713507198,17.0117656625268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.4285713507198,17.0117656625268"
+                    Point2="15.4285713507198,17.0117656625268"
+                    Point3="15.4285713507198,21.0117656625268" />
+                  <mssgle:LineSegment
+                    End="15.4285713507198,26.5235313250536" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1108,7 +1200,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Ladowanie danych do wymiaru Time\Wypelnianie wymiaru Time danymi">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

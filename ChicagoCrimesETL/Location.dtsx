@@ -11,11 +11,21 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{A29F1693-D820-4B0E-9AF3-9BFC63AF88E5}">
+  DTS:VersionBuild="44"
+  DTS:VersionGUID="{CDB0A8BA-3922-42B4-B8C2-E780C3B909BA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s15486]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2840C7EC-D42E-45AD-9CB8-682AE0CF89B5}"
+      DTS:ObjectName="db-mssql.s15486">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s15486;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
       DTS:CreationName="OLEDB"
@@ -40,7 +50,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="C:\Users\lacri\Desktop\ChicagoCrimesETL\Data\Crimes_-_2001_to_present.csv">
+          DTS:ConnectionString="C:\Users\lacri\Desktop\IDH\Chicago_crimes_ETL-OLAP\ChicagoCrimesETL\Data\Crimes_-_2001_to_present.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -49,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ID"
-              DTS:DTSID="{783C9CA4-2EF0-4E93-B961-2141E20A68EE}"
+              DTS:DTSID="{9FA8E0BE-CEDF-4823-BDD0-8D92B1990361}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Case Number"
-              DTS:DTSID="{00A2F209-18DE-417A-9E86-50FE426EBDAE}"
+              DTS:DTSID="{BE6066D9-BD59-43F6-B2DF-2A5F4F5BB00D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -67,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date"
-              DTS:DTSID="{203B8914-DA69-46DA-9049-B0FF78897662}"
+              DTS:DTSID="{7717BC8E-54CA-436B-852F-70BE990E5327}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -76,7 +86,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Block"
-              DTS:DTSID="{CAEA636D-8DF5-474B-A062-39963AE60FFA}"
+              DTS:DTSID="{87DBCBFB-F9DB-42E7-A00B-D314F0A1E08D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -85,7 +95,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="IUCR"
-              DTS:DTSID="{B0EC4BF0-2D99-4ED2-B519-6607F85C02B8}"
+              DTS:DTSID="{AD1A723F-CC04-47DF-AF30-9D024BDD40E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +104,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Primary Type"
-              DTS:DTSID="{1AA14896-A315-47A8-8321-1E46E9430D08}"
+              DTS:DTSID="{2A34DC05-7F8F-488D-B346-BAF4CC1EC20C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -103,7 +113,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Description"
-              DTS:DTSID="{3BEF5B94-A897-4256-991A-D18D50CEEFF2}"
+              DTS:DTSID="{56427CCE-E738-45DC-93F9-009CE2C4E910}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +122,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location Description"
-              DTS:DTSID="{B1ADACB4-5B50-42D7-8C48-960050179FEC}"
+              DTS:DTSID="{8B5C973B-4A04-4CBF-944B-7C0FD3B9022F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +131,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Arrest"
-              DTS:DTSID="{D197D8AA-D06D-41C0-892E-57E202D69610}"
+              DTS:DTSID="{4EEE9030-BED9-411A-A314-A4EBF479034D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -130,7 +140,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Domestic"
-              DTS:DTSID="{2F0F6DC2-41ED-4DA8-AE39-738893175FDC}"
+              DTS:DTSID="{DE916966-01AF-4C36-B27C-CC87B826F3E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -139,7 +149,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Beat"
-              DTS:DTSID="{FBF45A65-4CFE-4E00-B5F1-D0B6972CEE8A}"
+              DTS:DTSID="{41D82047-3DDD-4730-86B6-E8831B17412E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +157,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="District"
-              DTS:DTSID="{820398ED-E64B-44E3-9D13-C1CABDE05D64}"
+              DTS:DTSID="{3F62EF67-ED79-488F-8B48-1B964CA4A1B3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -155,7 +165,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Ward"
-              DTS:DTSID="{94F871A5-EA16-49C7-BFF2-57908C58C8B1}"
+              DTS:DTSID="{16DF93D4-54F4-42AF-8CEA-7648680C6176}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -163,7 +173,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="Community Area"
-              DTS:DTSID="{DF1DFCE0-0318-492F-A6D5-50667800ABFF}"
+              DTS:DTSID="{1288F716-AC1C-4A08-877E-C8B0A7483DE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -172,7 +182,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FBI Code"
-              DTS:DTSID="{F1F1CB33-10FB-473C-9A81-5102B5E6FB5E}"
+              DTS:DTSID="{4E47C086-D783-4854-B64C-70B0464882E3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -182,7 +192,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="X Coordinate"
-              DTS:DTSID="{F69EC90D-8C33-4BFE-AA0D-4779CFAC706A}"
+              DTS:DTSID="{462C8FCE-F304-4404-9BA1-E60E65DE2700}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +202,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Y Coordinate"
-              DTS:DTSID="{77642081-1818-453B-8B81-4F90940E8AE7}"
+              DTS:DTSID="{C7881647-46F1-4F60-947E-71541B6BF11D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -201,7 +211,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Year"
-              DTS:DTSID="{98620319-26AA-4DC2-808E-11A23D19E82E}"
+              DTS:DTSID="{5971EDF4-9FF9-42D4-9F7F-F762E5F36234}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,16 +220,17 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Updated On"
-              DTS:DTSID="{97D2A043-A66B-44B9-B744-D6F401488C5B}"
+              DTS:DTSID="{2BA60DC6-DF76-48DF-A4BE-A474B6EC0BFD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="131"
+              DTS:DataPrecision="9"
+              DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Latitude"
-              DTS:DTSID="{92484F98-1DAD-4506-95EA-1ECCB397D6CE}"
+              DTS:DTSID="{D8CEF298-49E3-4DA7-AB59-97A55B9CFA05}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -229,7 +240,7 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Longitude"
-              DTS:DTSID="{93BECDC4-55F2-4624-9569-F10D7D03A80A}"
+              DTS:DTSID="{91965309-1524-49F4-B1B0-5509595C7ED0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +250,116 @@
               DTS:DataScale="2"
               DTS:TextQualified="True"
               DTS:ObjectName="Location"
-              DTS:DTSID="{C3353C10-9E8D-4EE6-B010-2D5DC9BA5302}"
+              DTS:DTSID="{B74DF08A-4F75-4A97-86C8-E3C8E30FF063}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{00CDB83C-36EE-44E9-B043-F2DF4186E79F}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\Users\lacri\Desktop\IDH\Chicago_crimes_ETL-OLAP\ChicagoCrimesETL\Data\CommAreas.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="the_geom"
+              DTS:DTSID="{18797EAF-5934-4364-95AF-2446C1B4E6AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERIMETER"
+              DTS:DTSID="{7823EA2E-4B42-4197-9D72-D38AA7048069}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AREA"
+              DTS:DTSID="{E99B89F2-B987-421A-8981-5E879B2CC910}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMAREA_"
+              DTS:DTSID="{BEED3540-6B97-4522-BCD0-1670557DD732}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMAREA_ID"
+              DTS:DTSID="{B29F584D-B541-4D52-BAEE-271D343A1F61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AREA_NUMBE"
+              DTS:DTSID="{B76E8BE9-F9BA-49AD-A16D-760840BA92B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMMUNITY"
+              DTS:DTSID="{C82F5131-97C6-4E7D-A2AC-52FB219AA265}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AREA_NUM_1"
+              DTS:DTSID="{5255F78E-DED7-4F58-BAD6-341819425F15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SHAPE_AREA"
+              DTS:DTSID="{9BBB3FCB-52CD-4C69-8D07-5B97F72780BA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SHAPE_LEN"
+              DTS:DTSID="{F7FE3587-EF9D-424D-B9C3-EEC983897BC7}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -249,13 +369,13 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Czyszczenie tabeli Location"
+      DTS:refId="Package\Czyszczenie wymiaru Location"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{E8496262-9EA3-43E6-8ABA-92D8FB83F443}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Czyszczenie tabeli Location"
+      DTS:ObjectName="Czyszczenie wymiaru Location"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
@@ -266,13 +386,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Data Flow Task"
+      DTS:refId="Package\Ladowanie danych do wymiaru Location"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
       DTS:DTSID="{0525D931-9417-496C-9F4F-D1CBD20D04B5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Data Flow Task"
+      DTS:ObjectName="Ladowanie danych do wymiaru Location"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -280,12 +400,12 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow Task\Flat File Source"
+              refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="2057"
-              name="Flat File Source"
+              name="Dane na temat nazw CommunityArea"
               usesDispositions="true"
               version="1">
               <properties>
@@ -300,23 +420,186 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[AREA_NUMBE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[AREA_NUMBE]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[AREA_NUMBE]"
+                      name="AREA_NUMBE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[COMMUNITY]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[COMMUNITY]"
+                      length="50"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[COMMUNITY]"
+                      name="COMMUNITY"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[the_geom]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="the_geom" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[PERIMETER]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="PERIMETER" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[AREA]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="AREA" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[COMAREA_]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="COMAREA_" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[COMAREA_ID]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="COMAREA_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[AREA_NUMBE]"
+                      dataType="i4"
+                      name="AREA_NUMBE" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[COMMUNITY]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMMUNITY" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[AREA_NUM_1]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="AREA_NUM_1" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[SHAPE_AREA]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="SHAPE_AREA" />
+                    <externalMetadataColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].ExternalColumns[SHAPE_LEN]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="SHAPE_LEN" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="Dane z pliku Crime dataset"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Connections[FlatFileConnection]"
                   connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
                   connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Longitude]"
                       dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Longitude]"
                       name="Longitude"
                       precision="9"
                       scale="2"
@@ -333,15 +616,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]"
-                      codePage="65001"
-                      dataType="str"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Latitude]"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Latitude]"
                       name="Latitude"
+                      precision="9"
+                      scale="2"
                       truncationRowDisposition="IgnoreFailure">
                       <properties>
                         <property
@@ -355,12 +638,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[District]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[District]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[District]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[District]"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[District]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[District]"
                       name="District"
                       truncationRowDisposition="IgnoreFailure">
                       <properties>
@@ -375,12 +658,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Ward]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ward]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Ward]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Ward]"
                       name="Ward"
                       truncationRowDisposition="IgnoreFailure">
                       <properties>
@@ -395,12 +678,12 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Community Area]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="IgnoreFailure"
-                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Community Area]"
                       name="Community Area"
                       truncationRowDisposition="IgnoreFailure">
                       <properties>
@@ -418,127 +701,127 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ID]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[ID]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="ID" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Case Number]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Case Number" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Date]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Date]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Block]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Block]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Block" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[IUCR]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="IUCR" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Primary Type]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Primary Type" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Description]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Description]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Description" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Location Description]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Location Description" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Arrest]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Arrest" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Domestic]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Domestic" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Beat]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Beat]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Beat" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[District]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[District]"
                       dataType="i4"
                       name="District" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ward]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Ward]"
                       dataType="i4"
                       name="Ward" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Community Area]"
                       dataType="i4"
                       name="Community Area" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[FBI Code]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="FBI Code" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[X Coordinate]"
                       dataType="numeric"
                       name="X Coordinate"
                       precision="9"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Y Coordinate]"
                       dataType="numeric"
                       name="Y Coordinate"
                       precision="9"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Year]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Year]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Year" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Updated On]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Updated On" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      name="Latitude" />
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Latitude]"
+                      dataType="numeric"
+                      name="Latitude"
+                      precision="9"
+                      scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Longitude]"
                       dataType="numeric"
                       name="Longitude"
                       precision="9"
                       scale="2" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Location]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].ExternalColumns[Location]"
                       dataType="numeric"
                       name="Location"
                       precision="9"
@@ -546,27 +829,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="65001"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -575,11 +858,711 @@
               </outputs>
             </component>
             <component
-              refId="Package\Data Flow Task\OLE DB Destination"
+              refId="Package\Ladowanie danych do wymiaru Location\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Community Area]"
+                      cachedDataType="i4"
+                      cachedName="Community Area"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Community Area]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Longitude]"
+                      cachedDataType="numeric"
+                      cachedName="Longitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Longitude]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Latitude]"
+                      cachedDataType="numeric"
+                      cachedName="Latitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Latitude]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[District]"
+                      cachedDataType="i4"
+                      cachedName="District"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[District]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Ward]"
+                      cachedDataType="i4"
+                      cachedName="Ward"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Ward]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Right Input].Columns[AREA_NUMBE]"
+                      cachedDataType="i4"
+                      cachedName="AREA_NUMBE"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output].Columns[AREA_NUMBE]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Right Input].Columns[COMMUNITY]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMMUNITY"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output].Columns[COMMUNITY]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Longitude]"
+                      dataType="numeric"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Longitude]"
+                      name="Longitude"
+                      precision="9"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Longitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Latitude]"
+                      dataType="numeric"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Latitude]"
+                      name="Latitude"
+                      precision="9"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Latitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[District]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[District]"
+                      name="District">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[District]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Ward]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Ward]"
+                      name="Ward">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Ward]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Community Area]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Community Area]"
+                      name="Community Area"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input].Columns[Community Area]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[COMMUNITY]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[COMMUNITY]"
+                      name="COMMUNITY">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Right Input].Columns[COMMUNITY]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Location\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input].Columns[Longitude]"
+                      cachedDataType="numeric"
+                      cachedName="Longitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Longitude]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input].Columns[Latitude]"
+                      cachedDataType="numeric"
+                      cachedName="Latitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Latitude]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input].Columns[District]"
+                      cachedDataType="i4"
+                      cachedName="District"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[District]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input].Columns[Ward]"
+                      cachedDataType="i4"
+                      cachedName="Ward"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Ward]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input].Columns[Community Area]"
+                      cachedDataType="i4"
+                      cachedName="Community Area"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Community Area]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Longitude]"
+                      dataType="numeric"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Longitude]"
+                      name="Longitude"
+                      precision="9"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Longitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Latitude]"
+                      dataType="numeric"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Latitude]"
+                      name="Latitude"
+                      precision="9"
+                      scale="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Latitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[District]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[District]"
+                      name="District">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[District]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Ward]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Ward]"
+                      name="Ward">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Ward]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Community Area]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output].Columns[Community Area]"
+                      name="Community Area"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output].Columns[Community Area]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Location\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Location\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort 1.Inputs[Sort Input].Columns[AREA_NUMBE]"
+                      cachedDataType="i4"
+                      cachedName="AREA_NUMBE"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[AREA_NUMBE]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort 1.Inputs[Sort Input].Columns[COMMUNITY]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMMUNITY"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[COMMUNITY]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output].Columns[AREA_NUMBE]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output].Columns[AREA_NUMBE]"
+                      name="AREA_NUMBE"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[AREA_NUMBE]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output].Columns[COMMUNITY]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output].Columns[COMMUNITY]"
+                      name="COMMUNITY">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output].Columns[COMMUNITY]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sortowanie i usuwanie duplikatow"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[Longitude]"
+                      cachedDataType="numeric"
+                      cachedName="Longitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Longitude]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[Latitude]"
+                      cachedDataType="numeric"
+                      cachedName="Latitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Latitude]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[District]"
+                      cachedDataType="i4"
+                      cachedName="District"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[District]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[Ward]"
+                      cachedDataType="i4"
+                      cachedName="Ward"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Ward]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">4</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[Community Area]"
+                      cachedDataType="i4"
+                      cachedName="Community Area"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Community Area]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">5</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input].Columns[COMMUNITY]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMMUNITY"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[COMMUNITY]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Longitude]"
+                      dataType="numeric"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Longitude]"
+                      name="Longitude"
+                      precision="9"
+                      scale="2"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Longitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Latitude]"
+                      dataType="numeric"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Latitude]"
+                      name="Latitude"
+                      precision="9"
+                      scale="2"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Latitude]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[District]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[District]"
+                      name="District"
+                      sortKeyPosition="3">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[District]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Ward]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Ward]"
+                      name="Ward"
+                      sortKeyPosition="4">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Ward]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Community Area]"
+                      dataType="i4"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Community Area]"
+                      name="Community Area"
+                      sortKeyPosition="5">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[Community Area]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[COMMUNITY]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[COMMUNITY]"
+                      name="COMMUNITY">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output].Columns[COMMUNITY]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="Zapisywanie danych do wymiaru Location"
               usesDispositions="true"
               version="4">
               <properties>
@@ -632,7 +1615,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
                   connectionManagerRefId="Package.ConnectionManagers[DESKTOP-LRGN2OF\SQLEXPRESS.Crimes]"
                   description="The OLE DB runtime connection used to access the database."
@@ -640,75 +1623,81 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[District]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].Columns[District]"
                       cachedDataType="i4"
                       cachedName="District"
                       cachedSortKeyPosition="3"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[District]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[District]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[District]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[District]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Longitude]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].Columns[Longitude]"
                       cachedDataType="numeric"
                       cachedName="Longitude"
                       cachedPrecision="9"
                       cachedScale="2"
                       cachedSortKeyPosition="1"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lng]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Longitude]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[Lng]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Longitude]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Latitude]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].Columns[Latitude]"
+                      cachedDataType="numeric"
                       cachedName="Latitude"
+                      cachedPrecision="9"
+                      cachedScale="2"
                       cachedSortKeyPosition="2"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lat]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Latitude]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[Lat]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Latitude]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Community Area]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].Columns[Community Area]"
                       cachedDataType="i4"
                       cachedName="Community Area"
                       cachedSortKeyPosition="5"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CommunityAreaCode]"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Community Area]" />
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[CommunityAreaCode]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[Community Area]" />
+                    <inputColumn
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].Columns[COMMUNITY]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMMUNITY"
+                      externalMetadataColumnId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[CommunityArea]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output].Columns[COMMUNITY]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LocationId]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[LocationId]"
                       dataType="i4"
                       name="LocationId" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lat]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[Lat]"
                       dataType="numeric"
                       name="Lat"
                       precision="12"
                       scale="9" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Lng]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[Lng]"
                       dataType="numeric"
                       name="Lng"
                       precision="12"
                       scale="9" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CommunityAreaCode]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[CommunityAreaCode]"
                       dataType="i4"
                       name="CommunityAreaCode" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CommunityArea]"
-                      codePage="1252"
-                      dataType="str"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[CommunityArea]"
+                      dataType="wstr"
                       length="255"
                       name="CommunityArea" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[District]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input].ExternalColumns[District]"
                       dataType="i4"
                       name="District" />
                   </externalMetadataColumns>
@@ -716,220 +1705,24 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task\Sort"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">true</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Longitude]"
-                      cachedDataType="numeric"
-                      cachedName="Longitude"
-                      cachedPrecision="9"
-                      cachedScale="2"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Latitude]"
-                      cachedCodepage="65001"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Latitude"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">2</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[District]"
-                      cachedDataType="i4"
-                      cachedName="District"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[District]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">3</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Ward]"
-                      cachedDataType="i4"
-                      cachedName="Ward"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">4</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Community Area]"
-                      cachedDataType="i4"
-                      cachedName="Community Area"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">5</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Longitude]"
-                      dataType="numeric"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Longitude]"
-                      name="Longitude"
-                      precision="9"
-                      scale="2"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Longitude]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Latitude]"
-                      codePage="65001"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Latitude]"
-                      name="Latitude"
-                      sortKeyPosition="2">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Latitude]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[District]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[District]"
-                      name="District"
-                      sortKeyPosition="3">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[District]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Ward]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Ward]"
-                      name="Ward"
-                      sortKeyPosition="4">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Ward]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Community Area]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Community Area]"
-                      name="Community Area"
-                      sortKeyPosition="5">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[Community Area]}</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -938,15 +1731,35 @@
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Flat File Source Output]"
-              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              refId="Package\Ladowanie danych do wymiaru Location.Paths[Flat File Source Output]"
+              endId="Package\Ladowanie danych do wymiaru Location\Sort.Inputs[Sort Input]"
               name="Flat File Source Output"
-              startId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset.Outputs[Flat File Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Sort Output]"
-              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              refId="Package\Ladowanie danych do wymiaru Location.Paths[Flat File Source Output1]"
+              endId="Package\Ladowanie danych do wymiaru Location\Sort 1.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Ladowanie danych do wymiaru Location.Paths[Merge Join Output]"
+              endId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Inputs[Sort Input]"
+              name="Merge Join Output"
+              startId="Package\Ladowanie danych do wymiaru Location\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Ladowanie danych do wymiaru Location.Paths[Sort Output]"
+              endId="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location.Inputs[OLE DB Destination Input]"
               name="Sort Output"
-              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+              startId="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow.Outputs[Sort Output]" />
+            <path
+              refId="Package\Ladowanie danych do wymiaru Location.Paths[Sort Output1]"
+              endId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Ladowanie danych do wymiaru Location\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Ladowanie danych do wymiaru Location.Paths[Sort Output2]"
+              endId="Package\Ladowanie danych do wymiaru Location\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Ladowanie danych do wymiaru Location\Sort 1.Outputs[Sort Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -957,10 +1770,10 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{ECDB1287-8BE5-4255-9C2B-B51C1D01D021}"
-      DTS:From="Package\Czyszczenie tabeli Location"
+      DTS:From="Package\Czyszczenie wymiaru Location"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Data Flow Task" />
+      DTS:To="Package\Ladowanie danych do wymiaru Location" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -975,39 +1788,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="205.6,41.6"
-          Id="Package\Czyszczenie tabeli Location"
+          Size="220,41.6"
+          Id="Package\Czyszczenie wymiaru Location"
           TopLeft="56.0000009536744,41.6000005834243" />
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task"
+          Size="266.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location"
           TopLeft="112.000001907349,113.788236889955" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="158.800000953674,83.2000005834243">
+          TopLeft="166.000000953674,83.2000005834243">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.4000009536743,30.5882363065304"
+              EndConnector="79.2000009536746,30.5882363065307"
               Start="0,0"
-              End="28.4000009536743,23.0882363065304">
+              End="79.2000009536746,23.0882363065307">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,11.2941181532652" />
+                    End="0,11.2941181532654" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,11.2941181532652"
-                    Point2="0,15.2941181532652"
-                    Point3="4,15.2941181532652" />
+                    Point1="0,11.2941181532654"
+                    Point2="0,15.2941181532654"
+                    Point3="4,15.2941181532654" />
                   <mssgle:LineSegment
-                    End="24.4000009536743,15.2941181532652" />
+                    End="75.2000009536746,15.2941181532654" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.4000009536743,15.2941181532652"
-                    Point2="28.4000009536743,15.2941181532652"
-                    Point3="28.4000009536743,19.2941181532652" />
+                    Point1="75.2000009536746,15.2941181532654"
+                    Point2="79.2000009536746,15.2941181532654"
+                    Point3="79.2000009536746,19.2941181532654" />
                   <mssgle:LineSegment
-                    End="28.4000009536743,23.0882363065304" />
+                    End="79.2000009536746,23.0882363065307" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1020,48 +1833,64 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Data Flow Task">
+    design-time-name="Package\Ladowanie danych do wymiaru Location">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="64.5714296710735,18.9647061483258" />
-        <NodeLayout
-          Size="170.4,41.6"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="73.1428583884726,173.741178907243" />
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="97.6,41.6"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="104.000001771109,86.2588247391592" />
+          Id="Package\Ladowanie danych do wymiaru Location\Sort"
+          TopLeft="119.365081397855,80.888890023325" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location\Sort 1"
+          TopLeft="439.365086847422,76.130720021953" />
+        <NodeLayout
+          Size="204.8,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location\Dane z pliku Crime dataset"
+          TopLeft="55.6825406308078,0.611764714462129" />
+        <NodeLayout
+          Size="238.4,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location\Sortowanie i usuwanie duplikatow"
+          TopLeft="173.841272801769,268.428761934547" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location\Merge Join"
+          TopLeft="280.634925414105,161.620916376844" />
+        <NodeLayout
+          Size="273.6,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location"
+          TopLeft="144.126986581452,375.38824030947" />
+        <NodeLayout
+          Size="253.6,41.6"
+          Id="Package\Ladowanie danych do wymiaru Location\Dane na temat nazw CommunityArea"
+          TopLeft="377.460323888429,7.00130728773316" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="139.771429671073,60.5647061483258">
+          Id="Package\Ladowanie danych do wymiaru Location.Paths[Sort Output2]"
+          TopLeft="492.565086847422,117.730720021953">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="13.028572100036,25.6941185908334"
+              EndConnector="-126.863494766651,43.8901963548906"
               Start="0,0"
-              End="13.028572100036,18.1941185908334">
+              End="-126.863494766651,36.3901963548906">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.84705929541671" />
+                    End="0,22.0129700347279" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,8.84705929541671"
-                    Point2="0,12.8470592954167"
-                    Point3="4,12.8470592954167" />
+                    Point1="0,22.0129700347279"
+                    Point2="0,26.0129700347279"
+                    Point3="-4,26.0129700347279" />
                   <mssgle:LineSegment
-                    End="9.02857210003597,12.8470592954167" />
+                    End="-122.863494766651,26.0129700347279" />
                   <mssgle:CubicBezierSegment
-                    Point1="9.02857210003597,12.8470592954167"
-                    Point2="13.028572100036,12.8470592954167"
-                    Point3="13.028572100036,16.8470592954167" />
+                    Point1="-122.863494766651,26.0129700347279"
+                    Point2="-126.863494766651,26.0129700347279"
+                    Point3="-126.863494766651,30.0129700347279" />
                   <mssgle:LineSegment
-                    End="13.028572100036,18.1941185908334" />
+                    End="-126.863494766651,36.3901963548906" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1071,19 +1900,167 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="155.571430079791,127.858824739159">
+          Id="Package\Ladowanie danych do wymiaru Location.Paths[Sort Output1]"
+          TopLeft="168.165081397855,122.488890023325">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.8823541680834"
+              EndConnector="177.26984401625,39.1320263535186"
               Start="0,0"
-              End="0,38.3823541680834">
+              End="177.26984401625,31.6320263535186">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.3823541680834" />
+                    End="0,15.5660131767593" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5660131767593"
+                    Point2="0,19.5660131767593"
+                    Point3="4,19.5660131767593" />
+                  <mssgle:LineSegment
+                    End="173.26984401625,19.5660131767593" />
+                  <mssgle:CubicBezierSegment
+                    Point1="173.26984401625,19.5660131767593"
+                    Point2="177.26984401625,19.5660131767593"
+                    Point3="177.26984401625,23.5660131767593" />
+                  <mssgle:LineSegment
+                    End="177.26984401625,31.6320263535186" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ladowanie danych do wymiaru Location.Paths[Sort Output]"
+          TopLeft="293.041272801769,310.028761934547">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.1142862203165,65.3594783749231"
+              Start="0,0"
+              End="-12.1142862203165,57.8594783749231">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.6797391874615" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.6797391874615"
+                    Point2="0,32.6797391874615"
+                    Point3="-4,32.6797391874615" />
+                  <mssgle:LineSegment
+                    End="-8.1142862203165,32.6797391874615" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.1142862203165,32.6797391874615"
+                    Point2="-12.1142862203165,32.6797391874615"
+                    Point3="-12.1142862203165,36.6797391874615" />
+                  <mssgle:LineSegment
+                    End="-12.1142862203165,57.8594783749231" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ladowanie danych do wymiaru Location.Paths[Merge Join Output]"
+          TopLeft="345.434925414105,203.220916376844">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-52.3936526123364,65.2078455577031"
+              Start="0,0"
+              End="-52.3936526123364,57.7078455577031">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.6039227788516" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.6039227788516"
+                    Point2="0,32.6039227788516"
+                    Point3="-4,32.6039227788516" />
+                  <mssgle:LineSegment
+                    End="-48.3936526123364,32.6039227788516" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-48.3936526123364,32.6039227788516"
+                    Point2="-52.3936526123364,32.6039227788516"
+                    Point3="-52.3936526123364,36.6039227788516" />
+                  <mssgle:LineSegment
+                    End="-52.3936526123364,57.7078455577031" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ladowanie danych do wymiaru Location.Paths[Flat File Source Output1]"
+          TopLeft="504.260323888429,48.6013072877332">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-11.6952370410063,27.5294127342198"
+              Start="0,0"
+              End="-11.6952370410063,20.0294127342198">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.76470636710989" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.76470636710989"
+                    Point2="0,13.7647063671099"
+                    Point3="-4,13.7647063671099" />
+                  <mssgle:LineSegment
+                    End="-7.69523704100629,13.7647063671099" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-7.69523704100629,13.7647063671099"
+                    Point2="-11.6952370410063,13.7647063671099"
+                    Point3="-11.6952370410063,17.7647063671099" />
+                  <mssgle:LineSegment
+                    End="-11.6952370410063,20.0294127342198" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Ladowanie danych do wymiaru Location.Paths[Flat File Source Output]"
+          TopLeft="158.082540630808,42.2117647144621">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.082540767047,38.6771253088629"
+              Start="0,0"
+              End="10.082540767047,31.1771253088629">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.3385626544314" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.3385626544314"
+                    Point2="0,19.3385626544314"
+                    Point3="4,19.3385626544314" />
+                  <mssgle:LineSegment
+                    End="6.08254076704696,19.3385626544314" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.08254076704696,19.3385626544314"
+                    Point2="10.082540767047,19.3385626544314"
+                    Point3="10.082540767047,23.3385626544314" />
+                  <mssgle:LineSegment
+                    End="10.082540767047,31.1771253088629" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1096,7 +2073,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Ladowanie danych do wymiaru Location\Zapisywanie danych do wymiaru Location">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

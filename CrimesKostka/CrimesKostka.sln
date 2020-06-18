@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "CrimesKostka", "CrimesKostka.dwproj", "{3E995147-F9E0-462C-B89A-C31F708E90BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E995147-F9E0-462C-B89A-C31F708E90BF}.Development|Default.ActiveCfg = Development
+		{3E995147-F9E0-462C-B89A-C31F708E90BF}.Development|Default.Build.0 = Development
+		{3E995147-F9E0-462C-B89A-C31F708E90BF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47E062CB-DEEF-4948-8EA3-47431AE71741}
+	EndGlobalSection
+EndGlobal
